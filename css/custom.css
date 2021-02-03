@@ -1,0 +1,26 @@
+.navbar-item {
+    color: #000000;
+}
+.p_nav {
+    margin: 0px 20px 0px 0px;
+}
+.my-logo {
+    height: 100%;
+    width: 100%;
+}
+
+.cust-btn {
+    border-radius: 5px;
+    font-family: 'Lora';
+    letter-spacing: 2px;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.cust-pad {
+    padding: 0px 30px;
+}
+
+/* .padd {
+    margin: 0px 5px 0px 5px;
+} */
