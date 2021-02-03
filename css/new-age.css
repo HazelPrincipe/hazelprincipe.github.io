@@ -165,7 +165,7 @@ section h2 {
 @media (min-width: 992px) {
   #mainNav {
     border-color: transparent;
-    background-color: transparent;
+    background-color: #ffecec;
     text-transform: uppercase;
   }
   #mainNav .navbar-brand {
