@@ -176,7 +176,7 @@ section h2 {
   }
   #mainNav .navbar-nav > li > a,
   #mainNav .navbar-nav > li > a:focus {
-    color: #717171;
+    color: #181818;
     text-transform: uppercase;
   }
   #mainNav .navbar-nav > li > a:hover,
@@ -275,6 +275,10 @@ header.masthead .device-container .screen img {
   padding: 30px 20px;
 }
 
+.padd-100 {
+  padding: 150px 50px 10px 50px;
+}
+
 section.skills {
   position: relative;
   padding: 0 0;
@@ -297,6 +301,13 @@ section.skills .badges .badge-link:last-child {
 
 section.skills .badges .badge-link img {
   height: 60px;
+}
+
+@media (max-width: 768px) {
+  .shrink {
+    max-width: 50%;
+    height: auto;
+  }
 }
 
 @media (min-width: 768px) {
