@@ -305,7 +305,7 @@ section.skills .badges .badge-link img {
 
 @media (max-width: 768px) {
   .shrink {
-    max-width: 50%;
+    max-width: 80%;
     height: auto;
   }
 }
