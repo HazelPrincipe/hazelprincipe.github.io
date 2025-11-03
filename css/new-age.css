@@ -277,11 +277,17 @@ header.masthead .device-container .screen img {
 }
 
 .section-white {
-  margin-top: 40px;
-  margin-bottom: 40px;
   background-image: url("../img/arrow.svg");
   background-size: contain;
   background-repeat: no-repeat;
+  padding: 40px 0px;
+  margin: 40px 0px;
+}
+
+.section-cream {
+  background-color: #FFFBF5;
+  padding: 40px 0px;
+  margin: 40px 0px;
 }
 
 section.skills {
@@ -513,10 +519,15 @@ section.contact ul.list-social li.social-google-plus a:hover {
 }
 
 footer {
-  padding: 25px 0;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.3);
-  background-color: #000000;
+  padding: 16px 0;
+  color: #2F195F;
+  background-color: #FFFBF5;
+  align-items: center
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
 }
 
 .soc_med {
