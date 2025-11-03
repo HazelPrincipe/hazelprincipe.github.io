@@ -110,26 +110,17 @@ p.text.mb {
 
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
-  background-color: #ffe0e0;
+  background-color: #FCE3FF;
   transition: all .35s;
   font-family: 'Poppins', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
-}
-
-#mainNav .navbar-brand {
-  color: #490b0c;
-  font-family: 'Poppins', 'Helvetica', 'Arial', 'sans-serif';
-  font-weight: 200;
-}
-
-#mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
-  color: #490b0c;
+  border-radius: 0px 0px 20px 20px;
 }
 
 #mainNav .navbar-toggler {
   font-size: 16px;
   padding: 20px 40px;
-  color: #ffffff;
+  color: #2F195F;
 }
 
 #mainNav .navbar-nav > li > a {
@@ -150,7 +141,7 @@ p.text.mb {
 
 #mainNav .navbar-nav > li > a,
 #mainNav .navbar-nav > li > a:focus {
-  color: #ffffff;
+  color: #2F195F;
 }
 
 #mainNav .navbar-nav > li > a:hover,
@@ -173,12 +164,12 @@ p.text.mb {
   }
   #mainNav .navbar-nav > li > a,
   #mainNav .navbar-nav > li > a:focus {
-    color: #181818;
+    color: #2F195F;
     text-transform: capitalize;
   }
   #mainNav .navbar-nav > li > a:hover,
   #mainNav .navbar-nav > li > a:focus:hover {
-    color: #ffcccc;
+    color: #F768FF;
   }
   #mainNav.navbar-shrink {
     border-color: rgba(34, 34, 34, 0.1);
@@ -217,7 +208,6 @@ header.masthead {
 }
 
 header.masthead .header-content {
-  max-width: 500px;
   margin-bottom: 100px;
   text-align: center;
 }
@@ -290,14 +280,8 @@ header.masthead .device-container .screen img {
   margin: 40px 0px;
 }
 
-section.skills {
-  position: relative;
-  padding: 0 0;
-}
-
-section.skills .badges .badge-link {
-  display: block;
-  margin-bottom: 25px;
+#ux-designs, #web-dev, #graphic-designs {
+  scroll-margin-top: 80px;
 }
 
 .chip {
