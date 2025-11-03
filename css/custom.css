@@ -11,13 +11,13 @@
 
 .cust-btn {
     border-radius: 5px;
-    font-family: 'Lora';
-    letter-spacing: 2px;
-    font-size: 10px;
+    font-family: 'Poppins';
+    font-size: 12px;
     text-transform: uppercase;
     display: block;
     display: inline-block;
     text-align: center;
+    background-color: #EAE0FF;
 }
 
 .cust-pad {
@@ -26,4 +26,10 @@
 
 .margin {
     margin: 10px;
+}
+
+.gap {
+    gap: 16px;
+    display: flex;
+    padding: 10px 0px;
 }

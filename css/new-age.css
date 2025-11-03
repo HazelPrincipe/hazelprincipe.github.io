@@ -39,7 +39,7 @@ hr.light {
 
 .my-title {
   font-family: 'Poppins', 'Helvetica', 'Arial', 'sans-serif';
-  font-size: 100px;
+  font-size: 70px;
   margin-bottom: 0px;
   font-weight: 800;
   color: #2F195F;
@@ -51,14 +51,13 @@ h4,
 h5,
 h6 {
   font-family: 'Poppins', 'Helvetica', 'Arial', 'sans-serif';
-  font-weight: 200;
+  font-weight: 800;
 }
 
 p {
   font-family: 'Poppins', 'Helvetica', 'Arial', 'sans-serif';
   font-size: 15px;
   line-height: 1.5;
-  margin-bottom: 20px;
 }
 
 small {
@@ -68,13 +67,17 @@ small {
 p.text {
   font-family: 'Poppins', 'Helvetica', 'Arial', 'sans-serif';
   font-size: 15px;
-  line-height: 1.5;
   margin-bottom: 5px;
   color: #2F195F;
 }
 
-.pink-text {
-  color: #ff6666;
+p.text-sm{
+  font-size: 14px;
+  color: #000000;
+}
+
+.purple-text {
+  color: #2F195F;
 }
 
 @font-face {
@@ -88,10 +91,6 @@ p.text {
 
 p.text.mb {
   margin-bottom: 15px;
-}
-
-section h2 {
-  font-size: 70px;
 }
 
 .my-logo {
@@ -277,15 +276,17 @@ header.masthead .device-container .screen img {
   padding: 150px 50px 10px 50px;
 }
 
+.section-white {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-image: url("../img/arrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 section.skills {
   position: relative;
   padding: 0 0;
-}
-
-section.skills h2 {
-  font-size: 50px;
-  margin-top: 0;
-  font-weight: 800;
 }
 
 section.skills .badges .badge-link {
@@ -293,12 +294,14 @@ section.skills .badges .badge-link {
   margin-bottom: 25px;
 }
 
-section.skills .badges .badge-link:last-child {
-  margin-bottom: 0;
-}
-
-section.skills .badges .badge-link img {
-  height: 60px;
+.chip {
+  display: inline-block;
+  font-family: 'Poppins', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 600;
+  color: #7b57d1; /* purple text */
+  border-left: 4px solid #7b57d1; /* purple vertical line */
+  padding-left: 10px; /* space between line and text */
+  margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
@@ -317,7 +320,7 @@ section.skills .badges .badge-link img {
 
 @media (min-width: 768px) {
   section.skills h2 {
-    font-size: 70px;
+    font-size: 40px;
   }
 }
 
@@ -347,6 +350,10 @@ section.skills .badges .badge-link img {
   padding: 0px 30px 30px 30px;
 }
 
+.section-heading {
+  margin-bottom: 20px;
+}
+
 section.portfolio .marg-bt {
   margin-bottom: 50px;
 }
@@ -363,16 +370,8 @@ section.portfolio {
   background-color: #fff5f5;
 }
 
-section.portfolio .section-heading h2 {
-  margin-top: 0;
-}
-
 section.portfolio h2 {
   font-weight: 900 !important;
-}
-
-section.portfolio .section-heading p {
-  margin-bottom: 0;
 }
 
 section.portfolio .device-container,
@@ -560,24 +559,69 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .btn-outline {
-  color: #ff6666;
-  border: 1px solid;
-  border-color: #ff6666;
+  color: #7353BA;
+  border: 2px solid;
+  border-color: #7353BA;
 }
 
-.btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
+.btn-outline:hover, .btn-outline:focus, .btn-outline:active {
   color: white;
-  border-color: #ff6666;
-  background-color: #ff6666;
+  border-color: #7353BA;
+  background-color: #4C3482;
 }
 
 .btn {
   border-radius: 20px;
-  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'Poppins', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 500;
   text-transform: capitalize;
+  padding: 4px 12px;
+}
+
+.i {
+  font-size: 20px;
+  color: #2F195F;
+  padding: 0px 10px;
 }
 
 .btn-xl {
   font-size: 16px;
   padding: 15px 45px;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; /* space between cards */
+}
+
+/* Each card style */
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 24px;
+  border: 1px solid #f1f1f1;
+  text-align: left;
+  font-family: 'Poppins', 'Helvetica', 'Arial', sans-serif;
+
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 1px 3px 5px rgba(0.1, 0.5, 10, 0.1);
+  transform: translateY(-3px); /* slight lift effect (optional) */
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+  }
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2F195F;
+  margin-top: 10px;
 }
