@@ -90,7 +90,7 @@ p.text-sm{
 }
 
 p.text.mb {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .my-logo {
@@ -115,6 +115,7 @@ p.text.mb {
   font-family: 'Poppins', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   border-radius: 0px 0px 20px 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 #mainNav .navbar-toggler {
